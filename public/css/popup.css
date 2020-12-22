@@ -1,0 +1,169 @@
+/* pop up */
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /*hace que la flecha cambie a una manita (como de click)*/
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    background-color: #797979;
+    color: white;
+    border-radius: 6px;
+    z-index:1; /* que tan arriba está, tipo layers*/
+    padding: 10px;
+    position: absolute;
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* margins for each step */
+  /* product */
+.product-research{
+    width: 260px;
+    height: 190px;
+    margin-top: 40px;
+    margin-left:-36px;
+}
+.product-concept{
+    width: 400px;
+    height: 240px;
+    margin-top: 170px;
+    margin-left:-36px;
+}
+.product-sketching{
+    width: 300px;
+    height: 215px;
+    margin-top: 290px;
+    margin-left:-36px;
+}
+.product-prototyping{
+    width: 300px;
+    height: 190px;
+    margin-top: 410px;
+    margin-left:-36px;
+}
+.product-modeling{
+    width: 300px;
+    height: 215px;
+    margin-top: 530px;
+    margin-left:-36px;
+}
+.product-manufacturing{
+    width: 260px;
+    height: 215px;
+    margin-top: 650px;
+    margin-left:-36px;
+}
+
+  /* jewelry */
+.jewelry-research{
+    width: 260px;
+    height: 190px;
+    margin-top: 40px;
+    margin-left:-36px;
+}
+.jewelry-concept{
+    width: 400px;
+    height: 240px;
+    margin-top: 170px;
+    margin-left:-36px;
+}
+.jewelry-sketching{
+    width: 300px;
+    height: 220px;
+    margin-top: 290px;
+    margin-left:-36px;
+}
+.jewelry-prototyping{
+    width: 300px;
+    height: 190px;
+    margin-top: 410px;
+    margin-left:-36px;
+}
+.jewelry-modeling{
+    width: 300px;
+    height: 215px;
+    margin-top: 530px;
+    margin-left:-36px;
+}
+.jewelry-manufacturing{
+    width: 260px;
+    height: 215px;
+    margin-top: 650px;
+    margin-left:-36px;
+}
+  /* graphic */
+.graphic-research{
+    width: 260px;
+    height: 190px;
+    margin-top: 40px;
+    margin-left:-36px;
+}
+.graphic-concept{
+    width: 310px;
+    height: 240px;
+    margin-top: 170px;
+    margin-left:-36px;
+}
+.graphic-sketching{
+    width: 300px;
+    height: 215px;
+    margin-top: 290px;
+    margin-left:-36px;
+}
+.graphic-drawing{
+    width: 300px;
+    height: 210px;
+    margin-top: 410px;
+    margin-left:-36px;
+}
+.graphic-printing{
+    width: 330px;
+    height: 220px;
+    margin-top: 530px;
+    margin-left:-36px;
+}
+  /* ux */
+.ux-research{
+    width: 400px;
+    height: 210px;
+    margin-top: 40px;
+    margin-left:-36px;
+}
+.ux-concept{
+    width: 260px;
+    height: 215px;
+    margin-top: 170px;
+    margin-left:-36px;
+}
+.ux-experience{
+    width: 300px;
+    height: 220px;
+    margin-top: 290px;
+    margin-left:-36px;
+}
+.ux-interface{
+    width: 300px;
+    height: 190px;
+    margin-top: 410px;
+    margin-left:-36px;
+}
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

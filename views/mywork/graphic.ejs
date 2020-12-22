@@ -1,0 +1,142 @@
+<%- include("../partials/header") %>
+<!-- Jumbotron -->
+<div class="jumbotron yellow">
+    <section>
+        <h1 class="mb-3">My Work</h1> 
+        <p class="work mb-5">I can help you through the whole design process
+        to find the best solution that fits your needs</p>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <a class="work-light" href="/mywork/product"><div class="mx-3">Product Design</div></a>
+                    <a class="work-light" href="/mywork/jewelry"><div class="mx-3">Jewelry Design</div></a>
+                    <a class="work-light" href="/mywork/graphic"><div class="mx-3">Graphic Design <hr class="work-active"></div></a>
+                    <a class="work-light" href="/mywork/ux"><div class="mx-3">UX/UI Design</div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section>
+        <!-- pop up Research -->
+        <div class="popup" onclick="research()">
+            <p class="popuptext graphic-research" id="research" onclick="research()">
+               Primary and secondary research about the user, market, company, competitors,
+               trends and more in order to find insights about user's needs, desires and market gaps
+               to choose the best approach design wise.
+           </p>
+       </div>
+       <!-- pop up Concept -->
+       <div class="popup" onclick="concept()">
+           <p class="popuptext graphic-concept" id="concept" onclick="concept()">
+               Decide an idea that can fit the user's needs and client's requirements. Tools 
+               such as brainstorming, moodboards and more are used in this step. It's important 
+               to have in mind are the requirements, which will help us decide the possible printing 
+               materials, processes and channels in which the work will be printed (if needed) and delivered.
+           </p>
+       </div>
+       <!-- pop up Sketching -->
+       <div class="popup" onclick="sketching()">
+           <p class="popuptext graphic-sketching" id="sketching" onclick="sketching()">
+               2D sketches are useful because they can be done quickly and give you a general 
+               idea of what you are thinking. Combinations and modifications can be made until 
+               there is one that satisfies you. Inspirational moodboards may be useful to get a 
+               general idea of shapes, color pallete, style and more. 
+           </p>
+       </div>
+       <!-- pop up Drawing -->
+       <div class="popup" onclick="drawing()">
+           <p class="popuptext graphic-drawing" id="drawing" onclick="drawing()">
+               This might be the final step if no printing is needed. Som things to have in 
+               mind are in which device the design will be displayed, font size, color contrast, 
+               hierarchy of elements, color pallete, color mode (RGB or CMYK), display size, printing
+               sixe (if needed), and more.
+           </p>
+       </div>
+       <!-- pop up Printing -->
+       <div class="popup" onclick="printing()">
+           <p class="popuptext graphic-printing" id="printing" onclick="printing()">
+               This is the final step, once the digital design is complete, the printing material and 
+               printing process must be selected according to the cient's requirements. It's important to 
+               check the file with the cliente before printing to make sure the color pallete is the right one, 
+               printing size, color mode, and file pixels per inch are correct.
+           </p>
+       </div>
+       <!-- ends model -->
+    <div class="row">
+        <!-- Process -->
+        <div class="col-3 d-none d-xl-block">
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i>  Research 
+                <!-- pop up -->
+                <span class="popup" onclick="research()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i>  Concept 
+                <!-- pop up -->
+                <span class="popup" onclick="concept()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Sketching 
+                <!-- pop up -->
+                <span class="popup" onclick="sketching()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Digital Drawing
+                <!-- pop up -->
+                <span class="popup" onclick="drawing()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Printing 
+                <!-- pop up -->
+                <span class="popup" onclick="printing()"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <!-- Images -->
+        <div class="col-12 col-xl-9">
+            <div class="row mb-4 justify-content-between">
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/magazine"><img class="show" src="../../imgs/Work/Graphic/Cover/magazine.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/poster"><img class="show" src="../../imgs/Work/Graphic/Cover/poster.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/it%20girl"><img class="show" src="../../imgs/Work/Graphic/Cover/itgirl.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/portrait"><img class="show" src="../../imgs/Work/Graphic/Cover/portrait.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/packaging"><img class="show" src="../../imgs/Work/Graphic/Cover/packaging.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-6 my-3">
+                    <a href="/mywork/graphic/day%20of%20the%20dead"><img class="show" src="../../imgs/Work/Graphic/Cover/dead.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // // When the user clicks on <div>, open the popup
+    function research() {
+        var popup = document.getElementById("research");
+        popup.classList.toggle("show");
+    }
+    function concept() {
+        var popup = document.getElementById("concept");
+        popup.classList.toggle("show");
+    }
+    function sketching() {
+        var popup = document.getElementById("sketching");
+        popup.classList.toggle("show");
+    }
+    function drawing() {
+        var popup = document.getElementById("drawing");
+        popup.classList.toggle("show");
+    }
+    function printing() {
+        var popup = document.getElementById("printing");
+        popup.classList.toggle("show");
+    }
+</script>
+
+<%- include("../partials/footerWork") %>

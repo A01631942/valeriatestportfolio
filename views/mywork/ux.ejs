@@ -1,0 +1,125 @@
+<%- include("../partials/header") %>
+<!-- Jumbotron -->
+<div class="jumbotron yellow">
+    <section>
+        <h1 class="mb-3">My Work</h1> 
+        <p class="work mb-5">I can help you through the whole design process
+        to find the best solution that fits your needs</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <a class="work-light" href="/mywork/product"><div class="mx-3">Product Design</div></a>
+                    <a class="work-light" href="/mywork/jewelry"><div class="mx-3">Jewelry Design</div></a>
+                    <a class="work-light" href="/mywork/graphic"><div class="mx-3">Graphic Design</div></a>
+                    <a class="work-light" href="/mywork/ux"><div class="mx-3">UX/UI Design <hr class="work-active"></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section>
+    <!-- pop up Research -->
+    <div class="popup" onclick="research()">
+        <p class="popuptext ux-research" id="research" onclick="research()">
+           Primary and secondary research about the user, market, company, competitors,
+           trends, materials and more in order to find insights about user's needs, desires, pains and market gaps
+           to choose the best approach design wise. Tools such as contextual interviews, shadowing,
+           mystery shopper, stakeholders map, empathy map, service safari, persona map and more are used in this step.
+       </p>
+   </div>
+   <!-- pop up Service Design Thinking -->
+   <div class="popup" onclick="concept()">
+       <p class="popuptext ux-concept" id="service" onclick="concept()">
+           Use Service Design Thinking tools to find an idea of a service and/or experience
+           that can fit the user's needs and client's requirements. Tools such as SCAMPER, 
+           brainstorming, guidelines map, moodboards and more are used in this step.
+       </p>
+   </div>
+   <!-- pop up Experience Design -->
+   <div class="popup" onclick="experience()">
+       <p class="popuptext ux-experience" id="experience" onclick="experience()">
+           Creating service prototypes in order to find improvement areas, make the neccessary
+           improvements and create anothe prototype over and over again until you are satisfied
+           with the result. Tools such as service blueprints, customer journey map, service design 
+           canvas and more are used in this step.
+       </p>
+   </div>
+   <!-- pop up Interface Design -->
+   <div class="popup" onclick="interface()">
+       <p class="popuptext ux-interface" id="interface" onclick="interface()">
+           This is the final step, once you have your sketches and rapid prototypes it's 
+           time to decide which material is best for the product, which process if best for 
+           manufacturing and which channel is best for delivering the product and/or service.
+       </p>
+   </div>
+   <!-- ends model -->
+    <div class="row">
+        <!-- Process -->
+        <div class="col-3 d-none d-xl-block">
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Etnographic Research 
+                <!-- pop up -->
+                <span class="popup" onclick="research()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Concept
+                <!-- pop up -->
+                <span class="popup" onclick="service()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> User Experience Design
+                <!-- pop up -->
+                <span class="popup" onclick="experience()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> User Interface Design 
+                <!-- pop up -->
+                <span class="popup" onclick="interface()"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <!-- Images -->
+        <div class="col-12 col-xl-9">
+            <div class="row mb-4 justify-content-between">
+                <div class="col-lg-8 my-3">
+                    <a href="/mywork/ux/ascent"><img class="show" src="../../imgs/Work/UX/Cover/ascent.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <a href="/mywork/ux/vinner"><img class="show" src="../../imgs/Work/UX/Cover/vinner.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-8 my-3">
+                    <a href="/mywork/ux/mexnia"><img class="show" src="../../imgs/Work/UX/Cover/mexnia.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <a href="/mywork/ux/pet"><img class="show" src="../../imgs/Work/UX/Cover/pet.jpg" alt=""></a>
+                </div>
+                <div class="col-12 my-3">
+                    <a href="/mywork/ux/nonno"><img class="show" src="../../imgs/Work/UX/Cover/nonno.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // // When the user clicks on <div>, open the popup
+    function research() {
+        var popup = document.getElementById("research");
+        popup.classList.toggle("show");
+    }
+    function service() {
+        var popup = document.getElementById("service");
+        popup.classList.toggle("show");
+    }
+    function concept() {
+        var popup = document.getElementById("concept");
+        popup.classList.toggle("show");
+    }
+    function experience() {
+        var popup = document.getElementById("experience");
+        popup.classList.toggle("show");
+    }
+    function interface() {
+        var popup = document.getElementById("interface");
+        popup.classList.toggle("show");
+    }
+</script>
+
+<%- include("../partials/footerWork") %>

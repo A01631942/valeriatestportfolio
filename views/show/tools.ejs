@@ -1,0 +1,51 @@
+<%- include("../partials/header") %>
+
+
+<section>
+        <div>
+            <!-- display the title of the selected item -->
+            <h2 class="my-5"><%=tool.title%></h2>
+            <div class="row">
+                <!-- Lista de modelos -->
+                <div class="d-none d-lg-block">
+                    <div class="d-flex col-12 justify-content-between mb-3">
+                        <%cad.forEach(function(model){
+                            var name=model.show.charAt(0).toUpperCase() + model.show.slice(1)%>
+                        <a class="btn" href="/tools/CAD/<%=model.show%>"><%=name%></a>
+                        <%})%>
+                    </div>
+                </div>
+                <!-- Pictures -->
+                <div class="row">
+                    <%tool.imgs.forEach(function(image){%>
+                        <div class="col-12 col-lg-4 mb-4">
+                            <img class="show" src="<%=image%>" alt="">
+                       </div>    
+                        
+                    <%})%>
+                </div>
+               <!-- Description -->
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-center my-3">
+                        <h5>CAD Modeling</h5>
+                        <%tool.CAD.forEach(function(model){%>
+                            <span>|  <%=model%>  |</span>
+                        <%})%>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
+                        <h5>About the project</h5>
+                        <p><%=tool.description%></p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
+                        <h5>Rendering</h5>
+                        <%tool.Rendering.forEach(function(render){%>
+                            <span>|  <%=render%>  |</span>
+                        <%})%>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+</section>
+
+<%- include("../partials/footerTools") %>

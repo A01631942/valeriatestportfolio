@@ -1,0 +1,70 @@
+<%- include("../partials/header") %>
+
+
+<section>
+        <div>
+            <!-- display the title of the selected item -->
+            <h2 class="my-5"><%=jewel.title%></h2>
+            <div class="row">
+                <!-- List of projects -->
+                <div class="d-none d-lg-block">
+                    <div class="d-flex col-12 justify-content-between mb-3">
+                        <%jewelry.forEach(function(title){
+                            var name=title.show.charAt(0).toUpperCase() + title.show.slice(1)%>
+                        <a class="btn" href="/mywork/jewelry/<%=title.show%>"><%=name%></a>
+                        <%})%>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <img class="show" src="<%=jewel.cover%>" alt="">
+                </div>
+                <div class="col-12">
+                    <p><%=jewel.description1%></p>
+                    <p><%=jewel.description2%></p>
+                </div>
+            </div>
+            <div class="row">
+                <%jewel.imgs.forEach(function(image){%>
+                    <div class="col-12 col-lg-4 my-4">
+                        <img class="mt-4 show" src="<%=image%>" alt="">
+                    </div>    
+                    
+                <%})%>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Tools -->
+                <div class="col-12 col-lg-4 text-center my-3">
+                    <h5>Tools & Software</h5>
+                    <%jewel.tools.forEach(function(tool){%>
+                        <span>|  <%=tool%>  |</span>
+                    <%})%>
+                </div>
+                <!-- Techniques -->
+                <div class="col-12 col-lg-4 text-center my-3">
+                    <h5>Techniques</h5>
+                    <%jewel.techniques.forEach(function(tech){%>
+                        <span>|  <%=tech%>  |</span>
+                    <%})%>
+                </div>
+                <!-- Materials -->
+                <div class="col-12 col-lg-4 text-center my-3">
+                    <h5>Materials</h5>
+                    <%jewel.materials.forEach(function(material){%>
+                        <span>|  <%=material%>  |</span>
+                    <%})%>
+                </div>
+                <!-- Collaboration -->
+                <%if (jewel.collab){%>
+                    <div class="col-12 text-center my-3">
+                        <h5>In collaboration with</h5>
+                        <p>
+                            <%jewel.collab.forEach(function(name){%>   
+                                <span>|  <%=name%>  |</span>
+                            <%})%>
+                        </p>
+                    </div>
+                <%}%>  
+            </div>
+        </div>
+</section>
+<%- include("../partials/footerWork") %>

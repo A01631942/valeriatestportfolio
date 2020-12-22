@@ -1,0 +1,163 @@
+<%- include("../partials/header") %>
+<!-- Jumbotron -->
+<div class="jumbotron yellow">
+    <section>
+        <h1 class="mb-3">My Work</h1> 
+        <p class="work mb-5">I can help you through the whole design process
+        to find the best solution that fits your needs</p>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <a class="work-light" href="/mywork/product"><div class="mx-3 work-active">Product Design<hr class="work-active"></div></a>
+                    <a class="work-light" href="/mywork/jewelry"><div class="mx-3">Jewelry Design</div></a>
+                    <a class="work-light" href="/mywork/graphic"><div class="mx-3">Graphic Design</div></a>
+                    <a class="work-light" href="/mywork/ux"><div class="mx-3">UX/UI Design</div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section>
+    <!-- pop up Research -->
+    <div class="popup" onclick="research()">
+        <p class="popuptext product-research" id="research" onclick="research()">
+            Primary and secondary research about the user, market, company, competitors,
+            trends, materials and more in order to find insights about user's needs desires and market gaps
+            to choose the best approach design wise.
+        </p>
+    </div>
+    <!-- pop up Concept -->
+    <div class="popup" onclick="concept()">
+        <p class="popuptext product-concept" id="concept" onclick="concept()">
+            Decide an idea of a product and/or service that can fit the needs of the user and 
+            requirements of the client. Tools such as SCAMPER, brainstorming, guidelines map, 
+            moodboards and more may be useful to find the concept. Something useful to have in mind 
+            are the requirements, which will help us decide the possible materials, processes and 
+            channels in which the product and/or service will be manufactured and delivered.
+        </p>
+    </div>
+    <!-- pop up Sketching -->
+    <div class="popup" onclick="sketching()">
+        <p class="popuptext product-sketching" id="sketching" onclick="sketching()">
+            2D sketches are useful because they can be done quickly and give you a general 
+            idea of what you are thinking. Combinations and modifications can be made until 
+            there is one that satisfies you. Inspirational moodboards may be useful to get a 
+            general idea of aesthetic line, look & feel, shapes and materials. 
+        </p>
+    </div>
+    <!-- pop up Prototyping -->
+    <div class="popup" onclick="prototyping()">
+        <p class="popuptext product-prototyping" id="prototyping" onclick="prototyping()">
+            Rapid prototypes are useful because they can be done quickly, yoy don't need
+            much material to make them and you can compare between them to see which one 
+            you like best. This is not a linear process, you can jump back and forth as much 
+            times as you need.
+        </p>
+    </div>
+    <!-- pop up CAD Modeling -->
+    <div class="popup" onclick="modeling()">
+        <p class="popuptext product-modeling" id="modeling" onclick="modeling()">
+            3D Models can be useful to see how the piece will be without having the actual piece.
+            With a 3D Model, a render can be made in order to see how the materials and the finishings
+            will look in the manufactured piece. Renders work for the client to look how the piece will
+            look after manufacturing.
+        </p>
+    </div>
+    <!-- pop up Manufacturing -->
+    <div class="popup" onclick="manufacturing()">
+        <p class="popuptext product-manufacturing" id="manufacturing" onclick="manufacturing()">
+            This is the final step, once you have your sketches and rapid prototypes it's 
+            time to decide which material is best for the product, which process if best for 
+            manufacturing and which channel is best for delivering the product and/or service.
+        </p>
+    </div>
+    <!-- ends model -->
+
+    <div class="row">
+        <!-- Process -->
+        <div class="col-3 d-none d-xl-block">
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i>  Research 
+                <!-- pop up -->
+                <span class="popup" onclick="research()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i>  Concept 
+                <!-- pop up -->
+                <span class="popup" onclick="concept()"><i class="fas fa-question-circle"></i></span>
+            </p>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Sketching 
+                <!-- pop up -->
+                <span class="popup" onclick="sketching()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Rapid Prototyping 
+                <!-- pop up -->
+                <span class="popup" onclick="prototyping()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> 3D Modeling 
+                <!-- pop up -->
+                <span class="popup" onclick="modeling()"><i class="fas fa-question-circle"></i></span>
+            <div class="vl"></div>
+            <p class="m-0"><i class="fas fa-circle icon-yellow"></i> Manufacturing 
+                <!-- pop up -->
+                <span class="popup" onclick="manufacturing()"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <!-- Images -->
+        <div class="col-12 col-xl-9">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-8 my-3">
+                    <a href="/mywork/product/aventure"><img class="show" src="../../imgs/Work/Product/Cover/aventure.jpg" alt=""></a>
+                </div>
+                <div class="col-6 col-lg-4 my-3">
+                    <a href="/mywork/product/dual"><img class="show" src="../../imgs/Work/Product/Cover/dual.jpg" alt=""></a>
+                </div>
+                <div class="col-6 col-lg-4 my-3">
+                    <a href="/mywork/product/pado"><img class="show" src="../../imgs/Work/Product/Cover/pado.jpg" alt=""></a>
+                </div>
+                <div class="col-6 col-lg-4 my-3">
+                    <a href="/mywork/product/dreams"><img class="show" src="../../imgs/Work/Product/Cover/dreams.jpg" alt=""></a>
+                </div>
+                <div class="col-6 col-lg-4 my-3">
+                    <a href="/mywork/product/angular"><img class="show" src="../../imgs/Work/Product/Cover/angular.jpg" alt=""></a>
+                </div>
+                <div class="col-12 col-lg-8 my-3">
+                    <a href="/mywork/product/neo"><img class="show" src="../../imgs/Work/Product/Cover/neo.jpg" alt=""></a>
+                </div>
+                <div class="col-6 col-lg-4 my-3">
+                    <a href="/mywork/product/eternal"><img class="show" src="../../imgs/Work/Product/Cover/eternal.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // // When the user clicks on <div>, open the popup
+    function research() {
+        var popup = document.getElementById("research");
+        popup.classList.toggle("show");
+    }
+    function concept() {
+        var popup = document.getElementById("concept");
+        popup.classList.toggle("show");
+    }
+    function sketching() {
+        var popup = document.getElementById("sketching");
+        popup.classList.toggle("show");
+    }
+    function prototyping() {
+        var popup = document.getElementById("prototyping");
+        popup.classList.toggle("show");
+    }
+    function modeling() {
+        var popup = document.getElementById("modeling");
+        popup.classList.toggle("show");
+    }
+    function manufacturing() {
+        var popup = document.getElementById("manufacturing");
+        popup.classList.toggle("show");
+    }
+</script>
+
+<%- include("../partials/footerWork") %>
